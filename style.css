@@ -1,16 +1,50 @@
-#mainContent 
-{
-     font-family: 'Common Pixel', sans-serif;
-     text-align: center;
-     margin: 0;
-     padding: 0;
-}
-#welcome 
-{
-     font-size: 100px;
-     font-weight: bold;
-     background-image: url('https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
-     -webkit-background-clip: text;
-     color: transparent;
-}
- 
+body
+         {
+         	image-rendering: pixelated;
+         	background: url("https://media.tenor.com/UmWmiibzlZMAAAAC/pixel-rain.gif") no-repeat center center fixed; 
+         	-webkit-background-size: cover;
+         	-moz-background-size: cover;
+         	-o-background-size: cover;
+         	background-size: cover;
+         	font-family: 'PF Ronda Seven', sans-serif;
+         }
+         #mainContent 
+         {
+         	text-align: center;
+         	margin: 0;
+         	padding: 0;
+         }
+         #navBar
+         {
+         
+         }
+         #welcome 
+         {
+         	font-size: 100px;
+         	font-weight: bold;
+         	color: white;
+         }
+         .gradientText
+         {
+         	background: linear-gradient(
+         		to right,
+         		#7953cd 20%,
+         		#00affa 30%,
+         		#0190cd 70%,
+         		#764ada 80%
+         	);
+         	-webkit-background-clip: text;
+         	background-clip: text;
+         	-webkit-text-fill-color: transparent;
+         	text-fill-color: transparent;
+         	background-size: 500% auto;
+         	animation: textShine 5s ease-in-out infinite alternate;
+         }
+         @keyframes textShine {
+         	0% {
+         		background-position: 0% 50%;
+         	}
+         	100% {
+         		background-position: 100% 50%;
+         	}
+         }
